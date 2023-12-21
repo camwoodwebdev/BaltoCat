@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SheCodes</title>
+    <style>
+      html {font-size: 100%;
+      box-sizing: border-box;
+    }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+      body {
+        margin: 300px;
+        font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+        background-color: #00796B;
+        color: #fff;
+        border-color:#FFEB3B;
+        border-width: 10px;
+        background-image: url(https://lh3.googleusercontent.com/pw/AIL4fc-cwXC6KRKQ-LYaoqZMTIWBXXQWnwrT5bNmne-vgMCSSGmSgnlllHwuhbECns4kn9p_xLpbdYU1Q8B7KcQebjpSj6pvOseCT8gE8aj2jk-8TufAR63P5fdVk7zqAQ4iweHQidhJdccpNgVquKYLBhSPdHvjARfT16HKK6vCXOtgsAlv4ulj422cQ_JSkCjI7tDJv3YOgozjiQ-phKB35XIfeyl3tf0ZNPTYFbpq25dwooT3qUv6wADNhSFxiYtrmua0p8Cq87ihXLbkdqmt8yH05jNm1NiOjiGNrq-nrXfZ4vox3ddbyjxAJ2lWyziKMws_Z7imlWP_l2OrT29OoKjwmuJlo742s3GDAsBxsMhpg0iYE5qER6ZIP5ra68OmeGC5ef6j41oAG-GXEDakC9S9x_kwGYDu9OUDjBP3W1PDehjJspuiddmfZ68QvqNZTxY673_heFNwqN2TT4p0uRgvvzZk08cn1lyThtTKJ4dRnSpuQ0b26is2uSBUsOb-ermxPY2tsFwLYT0gBHYbuu_Y2mroBfla1sTattB4DU7Up30med6uEEb8f7b6bKSrDqJUVhucaIVTI1f9OLSeqV-35G9nyLGdb-ba662WIi8ECKkE01dHQWEdKS9ynMdB--hoRuoVPZwpOqTWB_MEPl_t-8qX6wsqG4V4E5bJsAaVzA7JY_-_UmZORil8GCSMcJaoGClWWMcbuhy80gRiSUKt4D1IJLR8DQOKzjCIsc1Ev7psQ7AbAg4XhvW4_GhkOPlhwmVaC8eDHfV3QRBRQifBx648tZV-UjMgXq_pgjsFrbZyTYH9Ti04hTaXcruixx121LyYU9mBSx63pggSjxvwQDCqfpCyAd1lgzW7s5SzH4hnJu6qxDxQw4Ae78pvp3BNk_eUMYyYNmKTojGM2w=w1164-h853-s-no?authuser=0);
+left: 223px;
+      }
+      section {
+        margin: 120px 0;
+      }
+      h1,
+      h2 {
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: #00796B;
+        left: 250px;
+      }
+      h1 {
+        color: #B2DFDB;
+        text-align: center;
+        background-image: url(https://lh3.googleusercontent.com/pw/AIL4fc99_fkMWGHqzen8DY5QYaL6Bp4YDIcbt5AV6H1qe3IU4oWVDkqz8ub7j56hF0RrBw8BpAnz07q-okvjqoVoNoQoXYQHbtMh5vaQHotJH5rGlD-rkM2McwByLV4QoGRcPjxRHbXl5_Cr64NACDL5J8a4JOpeBIdgVXAHlv-udP9AGG2JTz8cGe2qbm1_evDdPeB5qnmHQj8nijPRTIDZvQv2n0mgjPifkKDBb4uRsZ86xR1Yk_aia_lKC15X0YH3ij4e81krAUxrpq-gRgriUIv_1SLjFWHDUdKBIu8HDM-tZhMMT-EowOlGIc83uRVuBOQ7NU-PI0g0-pqEGH8b62AhGzRcacE6T-izP0SY1f0F8ilA-cBROGBXbw4vSqEY7dnjuJm5cgg5GpfT9gRZARlwDYnWMbqAar-eHVPzxMbiQ_zPP7uvmE_sVHBXFpelmKbRD5kl4AsFM_Xcs0SVge45MbojfBJGe2GDFCGLmGfPTCxa9btnXZdqJW5fppXzuTHx1wtu_nKvC-qlQEzZd7dYyBZOQhbe3KiAKKY2DJ1vecI-pccq7Eyog8lpySzVFqPF8IM3OZAIVMfHowhV-ecDeqkJ1pbvs0kcHgKusOqNnIerWE7GatMATCm348IoM6oVtzHeORhtshaHugm-u-4MQPKx5W_Rv2Zpn8kj3cy7zJq_-onvPLG1QerOgG4LNgegCVsykti8WTCSQTFWXNzHvqicXAwZSraPi9Sf5tfJI-RkT5ySV95MfAgjb5q3hWv0qnGr05R9U5uE_SrR48ZE60T2C543Txnqpm_CeMSTyNF184VHdC0R242AacBjNY9NIFvEmFlCo_lZ0oD3M4BlWsl0sqN_3jJqCrs0Ha0Naw8ouRrFSRBNVvT_5QcpHGKmjM22i3QraOIIwBPNmw=w1088-h417-s-no?authuser=0)
+      width: 2968px;
+      
+        left: 250px;
+      
+
+      }
+      h2 {
+        text-align: center;
+        color: #757575;
+        padding: 10 10 24px;
+        background-color: #212121;
+        box-shadow: #212121;
+        text-shadow: #757575;
+        left: 250px;
+      }
+
+      h3 {
+        text-align: center;
+        color: #fff;
+        padding: 0 0 18px;
+        background-color: #B2DFDB;
+      
+        left: 300px;
+      }
+
+      h4 {
+        text-align: center;
+        color: #fff;
+        padding: 0 0 12px;
+        background-color: #00796B;
+       
+        left: 300px;
+      }
+
+      h5 {
+        text-align: center;
+        color: #fff;
+        padding: 0 0 10px;
+        background-color: #00796B;
+        
+        left: 250px;
+      }
+
+      h6 {
+        text-align: center;
+        color: #fff;
+        padding: 0 0 8px;
+        background-color: #00796B;
+        
+        left: 250px;
+      }
+
+      h7 {
+        font-family: PT Mono, monospace;
+        text-align: center;
+        color: black;
+        padding: 0 0 8px;
+        background-color: #757575;
+        
+        left: 250px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        font-family: PT Mono, monospace;
+        text-align: center;
+        border: black
+        margin: 20px;
+        background-color: #00796B;
+        
+        left: 250px;
+
+      }
+      button {
+        border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        background-color: #FFEB3B;
+        border: 1px solid #FFFFFF;
+        color:  #212121;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+        width:max-content;
+      }
+      button:hover {
+        color: #FFEB3B;
+        background: #212121;
+      }
+      img {
+        text-align: center;
+        justify-content: center;
+        width: 30%;
+        margin: auto;
+        display: block;
+        box-shadow: 20px, 30px;
+        box-shadow: #212121;
+
+
+      }
+
+      .wrapper .sidebar {
+        background-color: #757575;
+        position: fixed;
+        top: 0;
+        bottom: 100%;
+        left: 0;
+        width: 225px;
+        height: 90%;
+        padding: 20px 0;
+        transition: all 0.33s ease;
+        transition-delay: 20ms;
+        box-shadow: #212121;
+        margin: 0px;
+        background-color: 0%;
+        background-image: url(https://lh3.googleusercontent.com/pw/AIL4fc8SSKE4MtMxFBNn1fK4o9pyNn4yZqTGZ8TRZO090vmWRInPpNUn7sEjK32bYyJ3cbhg5vHI1rw5KzePNMTH4W4SK8yfMgVts_-C6nRE8jHzJdLbhJzUJklH8tpI2rpcagaKBLt7MopcKpHnpjT3PY3OQeSPBN0gV7YZxz9G7X3UhIeI2EFpVMuOIBh_mdWVU4mlbEYYKvS4ph6ve66RKpLlfyLuYl_E67VJB-P2034xejmddU73iqAruj0dAv7pDexCgqimTxpgQ0U-tmK4s7m6THLjSN9ZtKSYz0PeNQi4BNljoasXwlRnJVA6f4-56Szqv9ClRzue99_DpuCp8jsyyzDqlS8jhAYrtxWFuAa_P7h21uj3U0NCR8TLJpfe6U27LeP84QykpGWgHjo8NRJ6_aPtkQOoBhrvbhEOZHPfuswDUolpZ8u2co-FAW9tf1uHVchFZTmrGdy36m6Xqlt-pfkfPwg4rjSE4dX9YPewndwLIZ7v89lOnym_6Zsq7EXh5G964pXLGgChlX6lb5v7ZePAIIxEWDfiSE1YXWWRa-jpjKR7GBsjH2TBMDw0D-nsWn-rmuIT3617xQ3awzrT2j25oYjzTe3mxCGO8xeB45QpzanZ4UNkazANDWCJUACN54cmG9xUElHc7QTkWrSii_sChW2KX_eEWiu4aqkJQW-eqy2miAppXhdXWYps5eXf1rzXiAoZlk9ksdtfEd9iKehf8CiP-PZwueADvIwCeKLcq8-VAsMFicOKjbDsHeaBa3-yKtp-0YodXr2OxFtWghyZ16A_d-AdAFHAsTmyH6CEGh_pa5ulC8ME_ZFORz4G3-DMS2uu3uzfJTiPxmy1qrcJfio19oiL6Qrd1vAPLGGiAPQp2K1GCBNs42hPczWOWt9a6haeVIu4481QDA=w171-h853-s-no?authuser=0);
+      font-family: cursive; 
+      
+      
+      }
+
+      .wrapper .sidebar:hover: {
+        margin: 0px;
+        left:0px;
+        width: 225px;
+        height: 80%;
+      }
+
+      img.BCLogo {
+        width: 200px;
+        height: 100px;
+        background-color: #00796B;
+        left: 0 px;
+        display: block;
+        text-align: center;
+        margin-left: 0px;
+        display: inline-block;
+
+
+}
+
+      button.BaltoCatlogo {
+        width: 200px;
+        height: 100px;
+        background-color: #00796B;
+        color:#FFEB3B;
+        image: 200px;
+        border-radius: 0px;
+        border-color: #FFEB3B;
+        border-width: 30px;
+        display: inline-block;
+        
+      }
+
+      button.BaltoCatlogo:hover {
+        width: 200px;
+        height: 100px;
+        background-color: teal;
+        color:#212121;
+        border-color: black;
+        
+      }
+
+      button.Type1 {
+        width: 200px;
+        height: 100px;
+        background-color: #00796B;
+        color:#FFEB3B;
+        image: 200px;
+        border-radius: 0px;
+        border-color: #00796B;
+        border-width: 5px;
+        text-height: 10em;
+        text-shadow: #757575;
+        
+
+        
+      }
+
+      button.Type1:hover {
+        width: 200px;
+        height: 100px;
+        background-color: #B2DFDB;
+        color:#FFEB3B;
+        border-color: black;
+        border-width: 0px;
+        text-shadow: #757575;
+        font-family: 'Courier New', Courier, monospace;
+        text-height: 13em;
+        text-emphasis-style: strong;
+        
+      }
+      div.heading {
+        left: 300px;
+        text-align: center;
+        margin: 0px;
+      }
+
+      div.body {
+        left: 300px;
+        text-align: center;
+        margin: 300px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div class="wrapper">
+        <!--Top menu -->
+       
+        <div class="sidebar">
+           <!--BaltoCat Logo Image-->
+           <button class="BaltoCatlogo"> <img class="BCLogo" src="https://lh3.googleusercontent.com/pw/AIL4fc-G1B_97ReGrYzdDeWbZS_jfuTZ9D8w5c8sPihxtGr6unQt9PzDOsWw79z0cYnqI2HvY0aiH_yUf9wKBYFLavAGW-hLGWBV6vpsQma_225ciYcZalMiHLzO-k303W66VCUSQZ3_sr5_7GHYl85eaTpKEsPxOwkG2_eppwymULay2n8gpTDw3kcnG4PeiX_p_b0llZ6r9ov-NI-jk8SpOYNSbwJQcB4sHFaPVrGazNBODB_Xez8INBobpvgVI8SODDTpoltY3d0Gub25WqZTwfM9YFkMitDZwyYDJBPpmpb1Gwr2ks6QyxotSN8U6Ay0gSjXBB2sBV5Q8XzMoYUPt0ub3ZvaLb0StmAoL_iNn4M6PRQv622QocX8Yh_xtzFisSMdumrPrXwqpz16wgbPI5R5ZoVTfVqUh20oanVxm6FC75CDsGIOmQboxHZqFit5F3Jnb9X1VpCfg2KIlwVPYd0rmy5BnBdW6dM_sexrBosWPh4FQqeCcvhpyzJK-qNSddJcQwnOhhcfIjB6-46tigOrIoXwyhNdAyXk43R3eSy_t6eCCwFjviZuI_GSbtgIpJoGsNgZZCHAMKBV-tA6e6j32qVhL5s-mtSpRBD8vzsyqjnviFJiHsgJQNJIQVnbsLMcDJw_h4N0E2Id28DZ_6YoRSYIC8NALXJjUIQPlg7ff1M22HyrFcJUBdBH8uodZNFV6fVjNEiiO0b9IDiPhCM7ZM9U0kJP5hwUq3nOFVgCQv2iVdKA61c0f573Par4lQx7Z8VNxmcYK6WWfdWZ2uNN7urs_We0IaATK7lOii-lJJZi92VKxsWiVHefKIS4gI9e6b7TMKIqZlm9wE7OWjlVJk8uWVG7BBheZ8p-aIM6FyNUaCmzQgTuE6Wwt8WKtVyqZ8T6zEhkQLk5VRNB5Q=w567-h411-s-no?authuser=0" alt="BaltoCatLogo"></button>
+          <button class="Type1"> Meet Balto </button>
+          <button class="Type1"> Contact Balto's Owner </button>
+          <button class="Type1"> Buy Balto Merch </button>
+          <button class="Type1"> Explore this website </button>
+           
+           <!--Meet Balto-->
+        <!--Contact Balto's Owner-->
+        <!--Buy Balto Merch-->
+         <!--Meet Balto-->
+        <!--Contact Balto's Owner-->
+        <!--Explore this website-->
+        </div>
+
+    </div>
+
+    <div class="Heading">
+
+      <h1>
+        Welcome to BaltoCat.com
+    </br>
+      </h1>
+    </div>
+<div>
+      <img src="https://lh3.googleusercontent.com/pw/AIL4fc_k-Htojy0b7UC-1-4wtPUk4usRzwSToAc2QAAPalAJlYh0Sjrrh1BSYh6-tGh--qweON8JdYYbvIwVgObQEuH4qK3yTK1R6ipIabWSw0okMb8UWv0gjGQgatt79JxmSEm0b9MoA8K6iNWCVrCSMY0Zn9yjWogY3-mKTf_ZJsoh6LEZZBblgOD11sAu9xkSQZgIUT-96NTPRxERyegducaXq9KnjJF-YzA-bsmBA0rdepXxa2Pk5qGsdSJPwABpg7I90lVnuqquc3SlPH2GxLWCfO5a795Y-GZRinn3NFp4aagUH8s9D7sZtYK0k3nn9SGvUGcDCjA8-fIJGlXBTtjw4Rt1c_grP0qMlRqZxftKPIKuqMYGemidooOH6jjsiCdpBT0p7aVZWwuGk6EEmSaox93wpLBabaPSUsc6Xh73slOJtFcXNvDLL_QUPvz61HwO9jwmvF-DiAx32Lcb_NSHoWOztSo-9boiJZBgyMTzJEmoIeWa0VcaZg8ZeCEEmMJxi_n-iut5P8wVx976BJ43sfZAyP2CcfqiXLxoNHGeaGzsimbWjOOn74_0m_TpdheL88eVEIVTnHkSwZkXyWxoz69U0o_Klq1Gxmwz5j2ZLRvNsbq2P-I8KOZim-SHrU2wsyPEvbRNCYtQpVzTBiN29D20c7fBNPjQy9E2TRhTEDUr6CXUU7htdfFGeC9tgsgcwaGbyZ8B7MOUAn067clE99v3MvJBx10pYJ53EcOiIXCHNHS6t854YNVYot8zjxROj4pn3s2sgRf3BIjDBU8-dgTRsziopA421x9CReTBuyDvC3PiCz2WnjjLjqoom4UR9ppLSUNy5DQ5b4DIfxdpgOkzZ_K4btkxi6P_rG_aaRJeYAkc2c-pRMfEMAd6NAofcQN2Iggey90IWfJ40w=w640-h853-s-no?authuser=0"
+      width="300" height="300">
+      <img src="https://lh3.googleusercontent.com/pw/AIL4fc9Nv_2XfUJlq8roZD6v4mmqH9dYsyLuLxi9ffa_QsE_EyI7EHBQj71GT1WpOYGLUuON1XkYvH9JYwQvXy2jAU0qpgh7DfmXn9R8EJ7rUxpSD6kEUn6yc6BiKRhpTJrNCVTPRsJ2LnnLc0jdN9M3zLtNrrjixjS4mPszeXsf5LgqV1NAGXzLAIQgqii4h1EJKy5QHt9eZ_QV9ob0p7-LaBfqMGl0Drt94ZTKb07Gn65yN3c5hNTzkWJOJrhC_itZ6isqaeJRo54CYxeebRElr_HccoDR75gX08vDxSy5ERZJ2FpLncxC5UWOs8oHi52BwkExprZOj6-qOMQCHv54bv8UIoTrTWmm_RnCLhEgFkLJn8NkVvJZhpITwoKndds4S5ekg9xqIYUyG9j6h9QEv2B4utA6213ssaFPKnWY_gr4Ar3rZ3m2h0X-RaA3cEz-3c7dUuz1JO7zXBh2qDXhALwYt2wP7vvGCbWfwTFGLB1d0FGtR4exf9uA8r3GUd1xEDR6Iekdiu4CtXodr7wt2UKSSSxoBoPC2S-Gx8uDhQzgUnhW2NDAFYa6WcRJxdsHM6iuEKjGCGtfbJ0Z4gjzi0vQIxZc5LcnSnGrXv06Xu7xN0Fx4ZZCeCba_M5S2BjSTuAx6KyJEAzGvHpHk5iS1V8tsq7MHbyYUu7RjcqOcqi9WogyR3bFGCgikZQ2tOU6ffE47BogTQM5RjaA477hApKIbOms_J2j_Z2ZVDKyEgXcU6jjiHiDDxDWpdOPgExJr-sQtXPtSwyKDh-rTf_wVqPv1sLCui1_z6wKs-IGnj4v_mr5DeOABb3XO2awn0k3l1kuCE6lBNVuhHjUXrsvU81Jlir0mQPZz4vptSDcta9Tofi3ApX1UbdFr5f_Y5qm1xaF7qZwtDEU70qQbXQbgQ=w640-h853-s-no?authuser=0"
+      width="300" height="300">
+    </div>
+    </br>
+    <div class="main">
+      <h2>
+        BaltoCat.com is a website for: </h2>
+
+    <h3>1. Locating my cat <strong>Balto</strong> and 
+    </br>2. Hosting my Professional Developer Portfolio 
+</br> 
+    </br> You are probably here either because you found BaltoCat and his collar or you saw me on LinkedIn! Either way, welcome!
+    </h3>
+      <p>
+        My cat Balto follows me on my trail runs quite frequently and has a tendency to explore and not come home. I developed this website to locate BaltoCat and make an easy way for people to contact me if he is found. Also explore BaltoCat's journey's and bio if you are bored.
+        <br />
+        <strong>
+          Thanks for visiting BaltoCat.com
+        </strong>
+      </p>
+      <br />
+      <button>
+        I found BaltoCat
+      </button>
+    </br>
+      <button>
+        I saw you on LinkedIn or Indeed and want to observe your Developer skills!
+      </button>
+    </br>
+
+    </br>
+
+  </div>
+<h7> Website coded by C. Wood </h7>
+
+    <script>
+
+
+
+
+
+
+
+
+!-----> function canSpeakPortuguese() {
+    !----->   let country = prompt("What country are you from?");
+    !----->  if (country==="Portugal" || country==="PORTUGAL" || 
+    !-----> country==="BRAZIL" || country==="Brasil" || country==="Brazil") {alert("You speak Portuguese")}; 
+    !-----> else { alert("Go learn Portuguese!") ; }
+}
+
+!----->  canSpeakPortuguese();
+
+    </script>
+
+    
+
+  </body>
+</html>
